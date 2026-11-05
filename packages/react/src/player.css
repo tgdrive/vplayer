@@ -37,7 +37,9 @@
     outline: none;
   }
 
-  .vplayer--controls-hidden {
+  /* The click layer sets its own cursor, so it must be named here: an inherited `cursor: none` from the root would lose to it. */
+  .vplayer--controls-hidden,
+  .vplayer--controls-hidden .vplayer__click-layer {
     cursor: none;
   }
 
